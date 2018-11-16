@@ -1,0 +1,65 @@
+  @font-face {
+        font-family: "Artifakt-main";
+        src: url(//analytics-dev.autodesk.com/validation/Artifakt/Artifakt-Element-Medium.ttf) format("truetype");
+    }
+    body {
+        font-family: "Artifakt-main";
+        background-color: AliceBlue;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+        body p {
+            color: gray;
+            font-size: 60%;
+            width: 90%;
+            max-width: 700px;
+        }
+
+    hr {
+        display: block;
+        width: 95%;
+        max-width: 700px;
+        border: 1px solid Gainsboro;
+        margin: 10px 0;
+    }
+    .test-area, .test-area-2 {
+        font-family: "Artifakt-main";
+        font-size: 80%;
+        width: 90%;
+        max-width: 700px;
+        margin-left: 10px;
+        padding: 10px;
+        background: Silver;
+        border: 3px solid Gray;
+        border-radius: 5px;
+    }
+    .test-area p {
+        font-size: 110%;
+        margin: 0px;
+        font-style: italic;
+        color: gray;
+    }
+    .test-area a {
+        font-size: 90%;
+    }
+    .test-area b {
+        font-size: 60%;
+    }
+
+    .test-area-2 p {
+        font-size: 110%;
+        margin: 0px;
+        font-style: italic;
+        color: gray;
+    }
+    .test-area-2 a {
+        font-size: 90%;
+    }
+    .test-area-2 b {
+        font-size: 60%;
+    }
+
+    .data-layer-updates {
+        font-size: 38px;
+    }
+    
