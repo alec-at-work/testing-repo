@@ -39,12 +39,14 @@
     <!-- TEALIUM DYNAMIC INCLUDE OF CODE SNIPPET HERE -->
     <!-- Loading script synchronously -->
     <script>
-        
-        var t_prof = document.location.pathname.split('/')[2],
-            t_env = document.location.pathname.split('/')[3],
+
+        var search = location.search.substring(1),
+            paramsData = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}'),
+            t_prof = paramsData['profile'] || paramsData['prof'] || 'na',
+            t_env = paramsData['env'] || paramsData['environment'] || 'na',
             loc = "//tags.tiqcdn.com/utag/autodesk/" + t_prof + "/" + t_env + "/utag.js",
             tms = document.createElement('script');
-        
+
         tms.src = loc;
         console.info('SANITY PLATFORM: loading the /' + t_prof + '/' + t_env + '/ Tealium UTAG');
         document.getElementsByTagName('head')[0].appendChild(tms);
